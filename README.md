@@ -1,4 +1,4 @@
-# easy-config 简单的配置刷新工具
+# <strong>easy-config：</strong>简单的配置刷新工具
 > 采用Zookeeper Watch机制与Spring ApplicationListener搭配实现的属性动态刷新插件。
 
 # 使用文档
