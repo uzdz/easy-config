@@ -3,7 +3,7 @@ package com.easy.config.selectors;
 import com.easy.config.SpringContextUtil;
 import com.easy.config.ZookeeperConfigApplication;
 import com.easy.config.RefreshedListener;
-import com.easy.config.annotations.EnableXyyConfig;
+import com.easy.config.annotations.EnableEasyConfig;
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.annotation.AnnotationAttributes;
 import org.springframework.core.type.AnnotationMetadata;
@@ -21,7 +21,7 @@ public class ConfigRegisterSelector implements ImportSelector {
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
 
         AnnotationAttributes attributes = AnnotationAttributes.fromMap(
-                importingClassMetadata.getAnnotationAttributes(EnableXyyConfig.class.getName()));
+                importingClassMetadata.getAnnotationAttributes(EnableEasyConfig.class.getName()));
 
         boolean startup = attributes.getBoolean("startup");
 

@@ -14,17 +14,17 @@
 </dependency>
 ```
 ## 第二步: 启动配置中心刷新组件
-> 在核心启动类Application里添加@EnableXyyConfig(startup = true)注解
+> 在核心启动类Application里添加@EnableEasyConfig(startup = true)注解
 
 > 当startup为false时不开启自动配置刷新
 
 ```java
 @SpringBootApplication
 @EnableDubbo
-@EnableXyyConfig(startup = true)
-public class XyySaasUserProviderApplication {
+@EnableEasyConfig(startup = true)
+public class UserProviderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(XyySaasUserProviderApplication.class, args);
+        SpringApplication.run(UserProviderApplication.class, args);
     }
 }
 ```

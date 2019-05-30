@@ -7,7 +7,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * {@link EnableXyyConfig} for config.
+ * {@link EnableEasyConfig} for config.
  *
  * @author uzdz
  * @date: 2019/3/16 14:30
@@ -17,7 +17,7 @@ import java.lang.annotation.Target;
 @Target(value = java.lang.annotation.ElementType.TYPE)
 @Documented
 @Import(ConfigRegisterSelector.class)
-public @interface EnableXyyConfig {
+public @interface EnableEasyConfig {
 
     /**
      * 启动config配置中心中间件
